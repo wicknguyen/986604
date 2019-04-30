@@ -37,3 +37,10 @@ a.movie-link:hover {
 .mood-img {
     height:200px
 }
+
+.definition {
+    font-size: smaller;
+}
+.definition dt{
+    color: burlywood;
+}
