@@ -5,6 +5,11 @@ body {
     font-size: 16px;
 }
 
+.summary p:first-letter {
+    font-size: larger;
+    text-transform: uppercase;
+}
+
 .explain {
     font-style: italic;
     font-size: smaller;
