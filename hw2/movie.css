@@ -1,0 +1,139 @@
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 100%;
+    background-image: url("./images/background.png");
+}
+
+#main {
+    width: 800px;
+    margin: 0px auto;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: url("./images/bannerbg.png") repeat-x top left;
+}
+
+header img {
+    display: block;
+    width: 800px;
+    margin: 0px auto;
+}
+
+.title {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    text-shadow: 3px 3px #999999;
+    font-size: 24pt;
+}
+
+.content-block {
+    border: 4px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.general-overview {
+    float: right;
+    width: 246px;
+    background-color: #A2B964;
+    height: 100%;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
+.review {
+    float: left;
+    width: 546px;
+}
+
+.rotten {
+    width: 100%;
+    height: 83px;
+    background: url("./images/rbg.png") repeat-x top left;
+    font-size: 48pt;
+    line-height: 48pt;
+    font-weight: bold;
+    color: red;
+    vertical-align: middle;
+}
+
+.review-col {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+}
+
+.review-comment {
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #E8DC9B;
+    font-weight: bold;
+    font-size: 8pt;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.review-comment img {
+    float: left;
+    margin-right: 5px;
+}
+
+.reviewer-info {
+    overflow: hidden;
+    font-style: italic;
+    margin-bottom: 20pt;
+}
+
+.reviewer-info img {
+    float: left;
+    margin-right: 5px;
+}
+
+dl.movie-overview {
+    padding: 10pt 10pt 0pt;
+    margin: 0px;
+}
+
+.movie-overview dt {
+    margin-top: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.movie-overview dt:first-child {
+    margin-top: 0px;
+}
+
+.movie-overview ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.review-bar {
+    clear: both;
+    text-align: center;
+    background-color: #A2B964;
+    padding: 5px;
+    margin: 0px;
+}
+
+.validator {
+    clear: both;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.validator img {
+    opacity: 0.5;
+}

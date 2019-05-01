@@ -1,0 +1,30 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: url("https://ak9.picdn.net/shutterstock/videos/5168909/thumb/1.jpg");
+}
+
+.main {
+    width: 79%;
+    margin: 0px auto;
+}
+
+.main a {
+    display: block;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    padding: 10px;
+    background-color: royalblue;
+    color: #999999;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.main a:hover {
+    background-color: deepskyblue;
+    color: #F0F0F0;
+    font-weight: bold;
+}
+
+
