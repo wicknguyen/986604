@@ -97,4 +97,9 @@ ul li a img {
 footer {
     font-size: x-small;
     clear: both;
+    padding-top: 10px;
+}
+
+footer p, footer a {
+    font-size: x-small;
 }
