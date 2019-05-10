@@ -1,0 +1,28 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Century Gothic", Helvetica, sans-serif;
+    font-size: 20pt;
+    width: 100%;
+}
+
+#container {
+    width: 800px;
+    margin: 0px auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group input {
+    height: 30px;
+    width: 400px;
+    font-size: 20pt;
+    margin-right: 10px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    font-size: 20pt;
+    cursor: pointer;
+}
