@@ -13,7 +13,6 @@ function increaseFontSize() {
     var fontSize = window.getComputedStyle(textField).getPropertyValue('font-size');
     var currentFontSize = parseInt(fontSize);
     currentFontSize += 2;
-    console.log(currentFontSize);
     textField.style.fontSize = currentFontSize + 'pt';
 }
 
@@ -34,9 +33,7 @@ function processMalkovitch() {
     var text = textField.value.split(" ");
     for (let i = 0; i < text.length; i++) {
         if (text[i].length > 5) {
-            text[i] = "Malkovitch ";
-        } else {
-            text[i] += " ";
+            text[i] = "Malkovitch";
         }
     }
     textField.value = combineValue(text).trim();
@@ -47,12 +44,11 @@ function processIgpayAtinlay() {
     var text = textField.value.split(" ");
     var ayWord = "ay";
     for (let i = 0; i < text.length; i++) {
-        var string = text[i];
+        var string = text[i].trim();
         if (startWithVowel(string)) {
             text[i] += ayWord;
         } else {
             var position = vowelPosition(string);
-            console.log(position);
             if (position > 0) {
                 let cluster = string.slice(position, string.length).toLowerCase();
                 let consonantCluster = string.slice(0, position).toLowerCase();
@@ -72,9 +68,9 @@ function combineValue(str) {
 }
 
 function vowelPosition(str) {
-    vowels = "aeiou";
+    const vowels = "aeiou";
     for (let i = 0; i < str.length; i++) {
-         if (vowels.includes(str.charAt(i))) {
+         if (str.charAt(i) && vowels.includes(str.charAt(i))) {
              return i;
          }
     }
@@ -82,11 +78,9 @@ function vowelPosition(str) {
 }
 
 function startWithVowel(str) {
-    vowels = ["a", "e", "i", "o", "u"];
-    for (let i=0; i < vowels.length; i++) {
-        if (str.startsWith(vowels[i])) {
+    const vowels = "aeiou";
+    if (str.charAt(0) && vowels.includes(str.charAt(0))) {
             return true;
-        }
     }
     return false;
 }
