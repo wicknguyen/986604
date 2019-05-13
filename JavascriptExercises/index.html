@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Exercise</title>
+</head>
+<body>
+    <ol>
+        <li>What is the difference between the following 2 statements?
+            <pre>
+                setTimeout(booyah, 2000); // <strong>function booyah execute after 2 seconds.</strong>
+                setTimeout(booyah(), 2000); // <strong>function booyah execute immediately.</strong>
+            </pre>
+        </li>
+        <li>What do the following 2 alerts display (answer without running the code)?
+            <pre>
+                var myfunc = function(a, x) {
+                 return a * x;
+                };
+                var x = myfunc(2, 3);
+                var y = myfunc;
+                alert(x);
+                alert(y(2,3));
+            </pre>
+            <pre><strong>2 alerts display the same result: 6</strong></pre>
+        </li>
+        <li>Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+            says “BOOYAH!”
+            <pre>setTimeout(booyah1, 2000); // don't change anything.</pre>
+            <pre>setTimeout(booyah2(), 2000);
+    function booyah2() {
+        return booyah;
+    }
+    function booyah() {
+        alert("Hello");
+    }
+            </pre>
+        </li>
+        <li> What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+            for using it)?
+            <pre>
+        Unobtrusive Javascript is the code Javascript does not write inline in the HTML, It separate the behaviour from markup or structure.
+            </pre>
+            <pre>
+        Create separate Javascript file and attach it into the HTML file with <strong>&lt;script&gt;&lt;&sol;script&gt;</strong> tag.
+        Because of combining the two (behavior and structure) can negatively impact a site's maintainability. If we separate them, we will increase modularity, scalability,...
+            </pre>
+        </li>
+    </ol>
+</body>
+</html>
