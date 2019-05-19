@@ -38,17 +38,13 @@ $(document).ready(function () {
 
     let arrangeTile = function(divElement, index) {
         // calculate x and y for this piece
-        let newIndex = index;
-        if (index >= blankTilePos) {
-            newIndex = index + 1;
-        }
-        let x = calculateX(newIndex);
-        let y = calculateY(newIndex);
+        let x = calculateX(index);
+        let y = calculateY(index);
         // set basic style and background
         $(divElement).css('left', x + 'px');
         $(divElement).css('top', y + 'px');
-        $(divElement).text(newIndex);
-        $(divElement).attr('id', newIndex);
+        $(divElement).text(index);
+        $(divElement).attr('id', index);
     }
 
     let init = function() {
@@ -73,11 +69,12 @@ $(document).ready(function () {
         });
 
         $("#shufflebutton").click(function () {
-            blankTilePos = parseInt(Math.random() * 15);
+            blankTilePos = 15;
             $("#puzzlearea div").each(function (index) {
                 arrangeTile(this, index);
             });
-            for (let i = 0; i < 7; i++) {
+            let random = parseInt(Math.random() * 15);
+            for (let i = 0; i < 3 * random; i++) {
                 $("#puzzlearea div").each(function (index) {
                     moveTile(this);
                 });
