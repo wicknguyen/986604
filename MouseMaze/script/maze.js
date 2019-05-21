@@ -34,8 +34,12 @@ $(document).ready(function () {
         }
         if (win) {
             $("#status").text("You win!:]");
+            gameStarted = false;
+            win = true;
         } else {
             $("#status").text("You lose!!!");
+            gameStarted = false;
+            win = false;
         }
 
     };
