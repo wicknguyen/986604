@@ -1,0 +1,76 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Futura, sans-serif;
+    font-size: 12pt;
+    height: 100%;
+}
+
+header {
+    background-color: #c1c1c1;
+    padding: 10px;
+}
+
+#container {
+
+}
+
+#lookup-form {
+    background-color: #f1f1f1;
+    padding: 10px;
+    height: 35px;
+}
+
+#lookup-form label {
+    height: 30px;
+}
+
+#dict-input {
+    height: 25px;
+    width: 300px;
+}
+
+#btnLookup {
+    height: 30px;
+    padding: 3px 15px;
+    font-size: 14pt;
+    border-radius: 7px;
+}
+
+#result {
+    position: relative;
+}
+
+#result #waiting {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#result #waiting img {
+    z-index: 3;
+}
+
+#result #result-content {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    overflow-x: auto;
+}
+
+#validation {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index: 1;
+}
